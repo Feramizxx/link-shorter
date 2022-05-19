@@ -6,7 +6,7 @@ const  HeaderMain=(props)=> {
   
 
   const  inputPointer=()=>{
-  
+    props.setClasses('point')
     
   }
   return (

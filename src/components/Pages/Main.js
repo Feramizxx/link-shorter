@@ -10,7 +10,7 @@ import Advanced from './Advanced'
 
 //https://api.shrtco.de/v2/shorten?url=youtube.com
 
-  const Main=() => {
+  const Main=(props) => {
   const [link, setLink] = useState('')
   // const [shortLink, setShortLink] = useState('')
   const [linkList,setlinkList]=useState([])
@@ -70,7 +70,7 @@ import Advanced from './Advanced'
       <div className={classes['form-container']}>
         <form className={classes.form} onSubmit={inputSubmitHandler}>
           <input type='font-bold text'
-            
+           className={props.classes}
            value={link}
            onChange={inpuContextHandler}
            placeholder='Shorten a link here...'/>
